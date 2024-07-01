@@ -2,8 +2,9 @@
 
 ### Overview
 
-The Pseudoyarn VS Code Extension provides syntax highlighting and basic autocomplete functionality for the Pseudoyarn pseudocode language.
-Features
+The Pseudoyarn VS Code Extension provides syntax highlighting and basic autocomplete functionality for the Pseudoyarn pseudocode language. This is an attempt to create an easily understandable, but in-depth pseudocode 'language'.
+
+Features:
 
 - Syntax highlighting for Pseudoyarn keywords, comments, and strings.
 - Basic autocomplete for Pseudoyarn keywords.

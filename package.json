@@ -1,8 +1,13 @@
 {
   "name": "pseudoyarn",
   "displayName": "pseudoyarn",
-  "description": "Syntax highlighting and autocompletion for the pseudoyarn pseudocode langauge.",
+  "description": "Syntax highlighting and autocompletion for the pseudoyarn pseudocode language.",
   "version": "0.0.1",
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/k0src/pseudoyarn.git"
+  },
   "engines": {
     "vscode": "^1.90.0"
   },
