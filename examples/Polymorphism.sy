@@ -1,0 +1,50 @@
+# Base class
+class Animal:
+    property name
+
+    constructor(new_name):
+        self.name <- new_name
+
+    method speak():
+        print("Animal speaks")
+
+# Interface for Flying
+interface Flyable:
+    method fly()
+
+# Derived class Dog inheriting from Animal
+class Dog inherits Animal:
+    method speak():
+        print("Woof! I am " + self.name)
+
+# Derived class Cat inheriting from Animal
+class Cat inherits Animal:
+    method speak():
+        print("Meow! I am " + self.name)
+
+# Derived class Bird inheriting from Animal and implementing Flyable
+class Bird inherits Animal implements Flyable:
+    method speak():
+        print("Chirp! I am " + self.name)
+
+    method fly():
+        print(self.name + " is flying")
+
+# Function to demonstrate polymorphism
+function make_animal_speak(animal: Animal):
+    animal.speak()
+
+# Main function to test polymorphic behavior
+function main():
+    animal1 <- new Dog("Buddy")
+    animal2 <- new Cat("Whiskers")
+    animal3 <- new Bird("Tweety")
+
+    make_animal_speak(animal1)
+    make_animal_speak(animal2)
+    make_animal_speak(animal3)
+
+    animal3.fly() # Specific behavior of Bird
+
+# Run the main function
+main()

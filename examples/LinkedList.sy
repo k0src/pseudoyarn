@@ -1,0 +1,53 @@
+# Linked list node class
+class Node:
+    property value
+    property next
+
+    # Constructor
+    constructor(new_value):
+        self.value <- new_value
+        self.next <- nil
+
+# Linked list class
+class LinkedList:
+    property head
+
+    # Constructor
+    constructor():
+        self.head <- nil
+
+    # Method to add item at the end
+    method add(new_value):
+        new_node <- new Node(new_value)
+        if self.head is nil:
+            self.head <- new_node
+        else:
+            current <- self.head
+            while current.next is not nil:
+                current <- current.next
+            current.next <- new_node
+
+    # Method to display the list
+    method display():
+        if self.head is nil:
+            print("List is empty")
+        else:
+            current <- self.head
+            while current is not nil:
+                print(current.value)
+                current <- current.next
+
+# Main function to test the linked list
+function main():
+    my_list <- new LinkedList()
+    print("Enter items to add to the linked list (type 'done' to finish):")
+    while true:
+        user_input <- input()
+        if user_input is "done":
+            break
+        else:
+            my_list.add(user_input)
+    my_list.display()
+
+# Run the main function
+main()
